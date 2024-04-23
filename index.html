@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>TM을 이용한 AIwebappTm02</title>
+</head>
+<body>
+    <!-- <button type="button" onclick="init()">Start</button> 버튼 대신 icon을 사용할 에정-->
+    <div class="wrapper">
+        <div class="titleContainer">
+            <h2>TM을 이용한 AIwebappTm02</h2>
+        </div>
+        <div class="container"> 
+            <!-- 카메라라는 글씨는 업뎃을 안하기 때문에  -->
+            <div class="camera"></div>      
+            <!-- 이름 정확도 설명은 업뎃하기 위해서 text를 남겨둠 -->
+            <div class="name">이름</div>    
+            <div class="percent">정확도</div>
+            <div class="description">설명</div>
+            <!-- 아이콘은 2가지 카메라와 카메라에 Slash된것으로  -->
+            <div class="icon">              
+                <i class="fas fa-video"></i>
+                <i class="fas fa-video-slash invisible"></i>                
+        </div>
+    
+    </div>       
+    <!-- 여기 아래 4줄은 자바스크립트를 사용하기 위해 사용하게 됩니다.   -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="https://kit.fontawesome.com/d4dade5e61.js"></script>
+    
+    <!-- 마지막으로 우리가 작성한 스크립트-사실은 TM에서 만들어준것을 수정했어요  -->
+    <script src="./script.js"></script>
+</body>
+</html>
